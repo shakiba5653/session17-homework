@@ -1,0 +1,61 @@
+@import "font-face.css";
+@import "fontawesome.css";
+@import "solid.css";
+body {
+    direction: rtl;
+    margin: 0;
+    font-family: Vazirmatn;
+    background: #121212;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 40px;
+}
+
+.special-list {
+    padding: 48px 0;
+}
+
+.special-list h2 {
+    color: #fff;
+}
+
+#series {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#series li {
+    width: 16.66%;
+    padding: 0 10px;
+}
+
+#series li img {
+    width: 100%;
+    height: auto;
+}
+
+#series li .content {
+    color: white;
+}

@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>تماشای فیلم و سریال نماوا</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="special-list">
+        <div class="container">
+            <h2>سریال‌های اختصاصی نماوا</h2>
+            <div class="series-list">
+                <ul id="series"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let movie = [{
+            title: "شبکه مخفی زنان",
+            image: "assets/images/shabake-makhfi-zanan.jpeg",
+            type: "series",
+            productionYear: "1401",
+            interest: "82%",
+        }, {
+            title: "مهمونی",
+            image: "assets/images/mehmoni.jpeg",
+            type: "series",
+            productionYear: "1401",
+            interest: "94%",
+        }, {
+            title: "نوبت لیلی",
+            image: "assets/images/nobat-layli.jpeg",
+            type: "series",
+            productionYear: "1401",
+            interest: "89%",
+        }, {
+            title: "مترجم",
+            image: "assets/images/motarjem.jpeg",
+            type: "series",
+            productionYear: "1401",
+            interest: "none%",
+        }, {
+            title: "خاتون",
+            image: "assets/images/khaton.jpeg",
+            type: "series",
+            productionYear: "1401",
+            interest: "91%",
+        }, {
+            title: "خسوف",
+            image: "assets/images/khosof.jpeg",
+            type: "series",
+            productionYear: "1401",
+            interest: "79%",
+        }, ]
+
+        function makeLi(counter) {
+            var li = document.createElement("li");
+            document.getElementById("series").appendChild(li);
+            var image = document.createElement("img");
+            image.src = movie[counter].image;
+            li.appendChild(image);
+            var name = document.createElement("h3");
+            name.innerHTML = movie[counter].title;
+            name.style.fontSize = "20px";
+            name.style.color = "#ffffff";
+            name.style.fontWeight = "300";
+            li.appendChild(name);
+            var div = document.createElement("div");
+            div.classList.add("content");
+            li.appendChild(div);
+            var p1 = document.createElement("p");
+            p1.innerHTML = movie[counter].productionYear;
+            div.appendChild(p1);
+            var p2 = document.createElement("p");
+            p2.innerHTML = movie[counter].interest;
+            div.appendChild(p2);
+        }
+        for (var i = 0; i < movie.length; i++) {
+            makeLi(i)
+        }
+    </script>
+</body>
+
+</html>

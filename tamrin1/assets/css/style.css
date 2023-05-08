@@ -1,0 +1,58 @@
+@import "font-face.css";
+@import "fontawesome.css";
+@import "solid.css";
+body {
+    direction: rtl;
+    margin: 0;
+    font-family: Vazirmatn;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 40px;
+}
+
+.special-list .holder {
+    padding: 20px 0;
+}
+
+.special-list .holder ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.special-list .holder ul li {
+    width: 16.66%;
+    padding: 0 20px;
+}
+
+.special-list .holder ul li img {
+    width: 170px;
+    height: auto;
+}
+
+.special-list h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}

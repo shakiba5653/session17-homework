@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="special-list">
+        <div class="container">
+            <a href="#">
+                <h2>دسته بندی های دیجی کالا</h2>
+            </a>
+            <div class="holder">
+                <ul id="digikala"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var digikalaCategories = [{
+            image: "https://dkstatics-public.digikala.com/digikala-categories/0c46d2532d61dd3a5b6a3afc17552c23c1b4d39e_1656160976.png?x-oss-process=image/format,webp",
+            title: " اسباب بازی کودک",
+            link: "https://www.digikala.com/main/mother-and-child/"
+        }, {
+            image: "https://dkstatics-public.digikala.com/digikala-categories/0cefa48f5c58adbbde8c5a76b22ee49de0e667f5_1656161101.png?x-oss-process=image/format,webp",
+            title: "زیبایی و سلامت ",
+            link: "https://www.digikala.com/main/personal-appliance/"
+        }, {
+            image: "https://dkstatics-public.digikala.com/digikala-categories/1c44d5964f259e0725ec86ca9739de888f1862c7_1656161158.png?x-oss-process=image/format,webp",
+            title: " ورزش وسفر",
+            link: "https://www.digikala.com/main/sport-entertainment/"
+        }, {
+            image: "https://dkstatics-public.digikala.com/digikala-categories/5d89d5b168e5ed079d619181e849cc737ec42c8d_1678698730.png?x-oss-process=image/format,webp",
+            title: " ابزار و لوازم ساختمانی",
+            link: "https://www.digikala.com/main/vehicles/"
+        }, {
+            image: "https://dkstatics-public.digikala.com/digikala-categories/4e985adcf61dd54d4d8abe725a62ba3990ea1eb1_1678698550.png?x-oss-process=image/format,webp",
+            title: " خودرو و موتورسیکلت",
+            link: "https://www.digikala.com/main/vehicles-spare-parts/"
+        }, {
+            image: "https://dkstatics-public.digikala.com/digikala-categories/af02140ea60e0fd478b09b279976a095c95615b6_1656161174.png?x-oss-process=image/format,webp",
+            title: " لوازم بومی و محلی",
+            link: "https://www.digikala.com/main/rural-products/"
+        }, ]
+
+        function digiFunc() {
+            var output = "";
+            for (var i = 0; i < digikalaCategories.length; i++) {
+                output += "<li>" + "<a href =" + digikalaCategories[i].link + ">" + "<img src=" + digikalaCategories[i].image + "/>" + "<p>" + digikalaCategories[i].title + "</p>" + "</a>" + "</li>"
+            }
+            document.getElementById("digikala").innerHTML = output;
+        }
+        digiFunc()
+    </script>
+</body>
+
+</html>
